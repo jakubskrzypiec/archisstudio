@@ -3,264 +3,294 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ARCHIS Studio Projekt | Projektowanie budynków</title>
-  <meta name="description" content="ARCHIS Studio Projekt – nowoczesne projekty budynków mieszkalnych i usługowych, koncepcje architektoniczne oraz indywidualne podejście do inwestycji." />
+
+  <title>ARCHISS Studio Projekt | Pracownia architektoniczna</title>
+  <meta name="description" content="ARCHISS Studio Projekt — nowoczesne projekty budynków mieszkalnych, usługowych i koncepcji architektonicznych." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="page-loader" id="pageLoader" aria-hidden="true">
-    <div class="loader-panel loader-panel-left"></div>
-    <div class="loader-panel loader-panel-right"></div>
-    <div class="loader-center">
-      <img src="logoduze.png" alt="ARCHIS Studio Projekt" class="loader-logo">
-      <p>ARCHIS STUDIO PROJEKT</p>
+  <div class="splash-screen" aria-hidden="true">
+    <div class="splash-card">
+      <span class="splash-logo">
+        <img src="logoduze.png" alt="">
+      </span>
+      <span class="splash-line"></span>
+      <span class="splash-name">ARCHISS</span>
+      <span class="splash-subtitle">studio projekt</span>
     </div>
   </div>
 
-  <header class="site-header" id="siteHeader">
-    <div class="container nav-wrap">
-      <a href="#start" class="brand">
-        <img src="logomale.png" alt="ARCHIS Studio Projekt" class="brand-logo" />
-      </a>
+  <header class="site-header">
+    <a href="#start" class="brand" aria-label="ARCHISS Studio Projekt">
+      <span class="brand-mark">
+        <img src="logomale.png" alt="ARCHISS Studio Projekt">
+      </span>
+    </a>
 
-      <button class="menu-toggle" id="menuToggle" aria-label="Otwórz menu">
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav class="site-nav" id="siteNav">
-        <a href="#o-nas">O pracowni</a>
-        <a href="#oferta">Oferta</a>
-        <a href="#realizacje">Realizacje</a>
-        <a href="#proces">Proces</a>
-        <a href="#kontakt">Kontakt</a>
-      </nav>
-
-      <a href="#kontakt" class="nav-cta">Porozmawiajmy</a>
-    </div>
+    <nav class="nav" aria-label="Menu główne">
+      <a href="#o-nas">O pracowni</a>
+      <a href="#oferta">Oferta</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#proces">Proces</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
   </header>
 
   <main>
     <section class="hero" id="start">
-      <img src="hero.png" alt="Nowoczesna architektura" class="hero-bg" />
+      <div class="hero-bg"></div>
       <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <div class="hero-card reveal">
-          <span class="eyebrow">PRACOWNIA ARCHITEKTONICZNA</span>
-          <h1>Projektujemy nowoczesne budynki z charakterem.</h1>
-          <p>
-            Tworzymy dopracowane projekty domów, budynków mieszkalnych i obiektów usługowych.
-            Łączymy funkcję, prostą formę i estetykę inspirowaną współczesną architekturą.
-          </p>
-          <div class="hero-actions">
-            <a href="#realizacje" class="btn btn-primary">Zobacz realizacje</a>
-            <a href="#kontakt" class="btn btn-secondary">Skontaktuj się</a>
-          </div>
+
+      <div class="hero-content reveal">
+        <p class="eyebrow">ARCHISS Studio Projekt</p>
+        <h1>Nowoczesna architektura budynków.</h1>
+        <p>
+          Projektujemy domy, budynki mieszkalne i obiekty usługowe.
+          Prosta forma, funkcja, proporcje i detal — bez przypadkowych rozwiązań.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#realizacje" class="btn btn-primary">Zobacz projekty</a>
+          <a href="#kontakt" class="btn btn-ghost">Porozmawiajmy</a>
         </div>
       </div>
     </section>
 
-    <section class="about section" id="o-nas">
-      <div class="container split-grid">
-        <div class="section-copy reveal">
-          <span class="eyebrow">O NAS</span>
-          <h2>Architektura oparta na proporcji, funkcji i dobrym detalu.</h2>
-          <p>
-            ARCHIS Studio Projekt przygotowuje projekty budynków dopasowane do stylu życia,
-            działki i oczekiwań inwestora. Stawiamy na przejrzyste bryły, nowoczesne rozwiązania
-            i estetykę, która dobrze znosi próbę czasu.
-          </p>
-          <p>
-            Projektujemy z myślą o wygodzie codziennego użytkowania i spójności całej inwestycji —
-            od pierwszej koncepcji po gotową dokumentację.
-          </p>
-        </div>
-        <div class="stats-card reveal delay-1">
-          <div class="stat-item">
-            <strong>Nowoczesna forma</strong>
-            <span>minimalizm, beton, szkło, rytm elewacji</span>
-          </div>
-          <div class="stat-item">
-            <strong>Indywidualne podejście</strong>
-            <span>projekt dopasowany do miejsca i potrzeb inwestora</span>
-          </div>
-          <div class="stat-item">
-            <strong>Pełne wsparcie</strong>
-            <span>koncepcja, projekt budowlany i konsultacje</span>
-          </div>
-        </div>
+    <section class="intro" id="o-nas">
+      <div class="intro-media reveal">
+        <img src="budynek.jpg" alt="Projekt nowoczesnego budynku" loading="lazy">
+      </div>
+
+      <div class="intro-text reveal">
+        <p class="eyebrow">O pracowni</p>
+        <h2>ARCHISS Studio Projekt tworzy architekturę dopasowaną do miejsca.</h2>
+        <p>
+          Pracownia przygotowuje projekty budynków mieszkalnych, usługowych i koncepcji architektonicznych.
+          Najważniejsze są dla nas czytelna funkcja, proporcja bryły i spójność całej inwestycji.
+        </p>
+        <p>
+          Każdy projekt zaczynamy od rozmowy, analizy potrzeb i możliwości działki.
+          Dzięki temu powstaje architektura estetyczna, praktyczna i świadomie zaprojektowana.
+        </p>
       </div>
     </section>
 
-    <section class="offer section" id="oferta">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">OFERTA</span>
-          <h2>Zakres współpracy dopasowany do rodzaju inwestycji.</h2>
-          <p>Od koncepcji po kompleksowy projekt budynku — przejrzyście, nowocześnie i z naciskiem na jakość.</p>
-        </div>
+    <section class="section offer-section" id="oferta">
+      <div class="section-head reveal">
+        <p class="eyebrow">Oferta</p>
+        <h2>Zakres współpracy dobieramy do inwestycji.</h2>
+        <p>
+          Możemy przygotować koncepcję architektoniczną, projekt budowlany lub pomóc
+          w uporządkowaniu założeń przed rozpoczęciem inwestycji.
+        </p>
+      </div>
 
-        <div class="offer-grid">
-          <article class="offer-card reveal">
-            <span class="offer-no">01</span>
-            <h3>Projekty domów jednorodzinnych</h3>
-            <p>Nowoczesne domy dopasowane do działki, potrzeb domowników i założonego budżetu.</p>
-          </article>
-          <article class="offer-card reveal delay-1">
-            <span class="offer-no">02</span>
-            <h3>Budynki mieszkalne</h3>
-            <p>Przemyślane układy, estetyczna bryła i rozwiązania odpowiadające współczesnym standardom.</p>
-          </article>
-          <article class="offer-card reveal delay-2">
-            <span class="offer-no">03</span>
-            <h3>Obiekty usługowe i biurowe</h3>
-            <p>Funkcjonalna architektura dla biznesu, w której forma wspiera codzienne działanie obiektu.</p>
-          </article>
-          <article class="offer-card reveal">
-            <span class="offer-no">04</span>
-            <h3>Koncepcje i konsultacje</h3>
-            <p>Wsparcie na etapie decyzji projektowych, układu funkcjonalnego i kierunku architektonicznego.</p>
-          </article>
-        </div>
+      <div class="offer-grid">
+        <article class="offer-card reveal">
+          <span>01</span>
+          <h3>Projekty domów</h3>
+          <p>Indywidualne projekty domów jednorodzinnych dopasowane do działki, funkcji i stylu życia.</p>
+        </article>
+
+        <article class="offer-card reveal">
+          <span>02</span>
+          <h3>Budynki mieszkalne</h3>
+          <p>Przemyślane układy, czytelna bryła i nowoczesna estetyka budynków mieszkalnych.</p>
+        </article>
+
+        <article class="offer-card reveal">
+          <span>03</span>
+          <h3>Obiekty usługowe</h3>
+          <p>Projekty budynków usługowych i biurowych, w których architektura wspiera funkcję.</p>
+        </article>
+
+        <article class="offer-card reveal">
+          <span>04</span>
+          <h3>Koncepcje</h3>
+          <p>Wstępne koncepcje, analiza możliwości działki i kierunek architektoniczny inwestycji.</p>
+        </article>
       </div>
     </section>
 
-    <section class="projects section" id="realizacje">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">REALIZACJE</span>
-          <h2>Wybrane projekty</h2>
-          <p>Nowoczesne bryły, oszczędna kolorystyka i architektura dopasowana do konkretnego miejsca.</p>
-        </div>
+    <section class="section projects" id="realizacje">
+      <div class="section-head reveal">
+        <p class="eyebrow">Realizacje</p>
+        <h2>Wybrane projekty</h2>
+        <p>
+          Nowoczesne domy, budynki mieszkalne i obiekty usługowe utrzymane
+          w spokojnej, architektonicznej estetyce.
+        </p>
+      </div>
 
-        <div class="projects-grid">
-          <article class="project-card wide reveal">
-            <img src="budynek.jpg" alt="Projekt budynku usługowego" />
-            <div class="project-info">
-              <span>Budynek usługowy</span>
-              <h3>Nowoczesna architektura o wyrazistej bryle</h3>
-            </div>
-          </article>
+      <div class="gallery-filters reveal">
+        <button class="filter-btn active" data-filter="all">Wszystkie</button>
+        <button class="filter-btn" data-filter="domy">Domy</button>
+        <button class="filter-btn" data-filter="mieszkalne">Mieszkalne</button>
+        <button class="filter-btn" data-filter="uslugowe">Usługowe</button>
+      </div>
 
-          <article class="project-card reveal delay-1">
-            <img src="budynekmieszkalny.jpg" alt="Projekt budynku mieszkalnego" />
-            <div class="project-info">
-              <span>Dom mieszkalny</span>
-              <h3>Spokojna forma i duże przeszklenia</h3>
-            </div>
-          </article>
+      <div class="projects-grid">
+        <article class="project-card reveal" data-category="uslugowe">
+          <img src="budynek.jpg" alt="Projekt budynku usługowego" loading="lazy">
+          <div>
+            <span>Budynek usługowy</span>
+            <h3>Nowoczesna bryła z wyrazistym detalem</h3>
+          </div>
+        </article>
 
-          <article class="project-card reveal delay-2">
-            <img src="budynek1.jpg" alt="Projekt domu nowoczesnego" />
-            <div class="project-info">
-              <span>Dom nowoczesny</span>
-              <h3>Minimalistyczna bryła w naturalnym otoczeniu</h3>
-            </div>
-          </article>
+        <article class="project-card reveal" data-category="domy">
+          <img src="budynek1.jpg" alt="Projekt domu" loading="lazy">
+          <div>
+            <span>Dom jednorodzinny</span>
+            <h3>Prosta forma i duże przeszklenia</h3>
+          </div>
+        </article>
 
-          <article class="project-card reveal">
-            <img src="budynekmieszkalny2.jpg" alt="Projekt domu jednorodzinnego" />
-            <div class="project-info">
-              <span>Dom jednorodzinny</span>
-              <h3>Elegancja, rytm i wyważona kompozycja</h3>
-            </div>
-          </article>
+        <article class="project-card reveal" data-category="mieszkalne">
+          <img src="budynekmieszkalny.jpg" alt="Projekt budynku mieszkalnego" loading="lazy">
+          <div>
+            <span>Budynek mieszkalny</span>
+            <h3>Funkcja i spokojna kompozycja</h3>
+          </div>
+        </article>
 
-          <article class="project-card reveal delay-1">
-            <img src="budynekmieszkalny3.jpg" alt="Projekt nowoczesnego budynku" />
-            <div class="project-info">
-              <span>Budynek mieszkalny</span>
-              <h3>Prosta architektura z mocnym detalem</h3>
-            </div>
-          </article>
+        <article class="project-card reveal" data-category="mieszkalne">
+          <img src="budynekmieszkalny2.jpg" alt="Nowoczesny budynek mieszkalny" loading="lazy">
+          <div>
+            <span>Budynek mieszkalny</span>
+            <h3>Rytm elewacji i współczesna forma</h3>
+          </div>
+        </article>
 
-          <article class="project-card reveal delay-2">
-            <img src="biurorachunkowe.jpg" alt="Projekt przestrzeni biurowej" />
-            <div class="project-info">
-              <span>Przestrzeń biurowa</span>
-              <h3>Funkcja i profesjonalny wizerunek</h3>
-            </div>
-          </article>
+        <article class="project-card reveal" data-category="domy">
+          <img src="budynekmieszkalny3.jpg" alt="Projekt domu mieszkalnego" loading="lazy">
+          <div>
+            <span>Dom</span>
+            <h3>Minimalizm w naturalnym otoczeniu</h3>
+          </div>
+        </article>
 
-          <article class="project-card wide reveal">
-            <img src="innybudynek.jpg" alt="Projekt architektoniczny budynku" />
-            <div class="project-info">
-              <span>Koncepcja architektoniczna</span>
-              <h3>Projekt budynku z naciskiem na współczesną estetykę</h3>
-            </div>
-          </article>
-        </div>
+        <article class="project-card reveal" data-category="uslugowe">
+          <img src="biurorachunkowe.jpg" alt="Projekt budynku biurowego" loading="lazy">
+          <div>
+            <span>Obiekt usługowy</span>
+            <h3>Profesjonalny charakter budynku</h3>
+          </div>
+        </article>
+
+        <article class="project-card reveal" data-category="domy">
+          <img src="innybudynek.jpg" alt="Koncepcja budynku" loading="lazy">
+          <div>
+            <span>Koncepcja</span>
+            <h3>Architektura z mocnym charakterem</h3>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="process section" id="proces">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">PROCES</span>
-          <h2>Przejrzysta współpraca od pierwszej rozmowy do gotowego projektu.</h2>
-        </div>
+    <section class="split-section" id="proces">
+      <div class="split-image reveal">
+        <img src="budynekmieszkalny2.jpg" alt="Nowoczesny projekt budynku" loading="lazy">
+      </div>
 
-        <div class="timeline">
-          <article class="timeline-item reveal">
+      <div class="split-content reveal">
+        <p class="eyebrow">Proces</p>
+        <h2>Od rozmowy do projektu gotowego do działania.</h2>
+
+        <div class="process-list">
+          <article>
             <span>01</span>
-            <h3>Rozmowa i analiza potrzeb</h3>
-            <p>Poznanie oczekiwań, rodzaju inwestycji, działki oraz priorytetów funkcjonalnych i estetycznych.</p>
+            <div>
+              <h3>Analiza potrzeb</h3>
+              <p>Ustalamy funkcję, możliwości działki, styl, budżet i główne oczekiwania inwestora.</p>
+            </div>
           </article>
-          <article class="timeline-item reveal delay-1">
+
+          <article>
             <span>02</span>
-            <h3>Koncepcja architektoniczna</h3>
-            <p>Ustalenie kierunku projektowego, bryły, układu i głównych założeń całej inwestycji.</p>
+            <div>
+              <h3>Koncepcja</h3>
+              <p>Tworzymy kierunek architektoniczny, układ funkcjonalny i pierwszą formę budynku.</p>
+            </div>
           </article>
-          <article class="timeline-item reveal delay-2">
+
+          <article>
             <span>03</span>
-            <h3>Opracowanie projektu</h3>
-            <p>Dopracowanie detali, materiałów i dokumentacji potrzebnej do dalszych etapów realizacji.</p>
+            <div>
+              <h3>Projekt</h3>
+              <p>Dopracowujemy bryłę, dokumentację, rozwiązania i estetykę całej inwestycji.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="contact section" id="kontakt">
-      <img src="budynekmieszkalny2.jpg" alt="Nowoczesny budynek" class="contact-bg" />
-      <div class="contact-overlay"></div>
-      <div class="container">
-        <div class="contact-card reveal">
-          <span class="eyebrow">KONTAKT</span>
-          <h2>Porozmawiajmy o Twoim projekcie.</h2>
-          <p>
-            Jeśli planujesz budowę domu, obiektu mieszkalnego lub usługowego,
-            napisz lub zadzwoń. Wspólnie ustalimy najlepszy kierunek współpracy.
-          </p>
+    <section class="contact-section" id="kontakt">
+      <div class="contact-bg"></div>
 
-          <div class="contact-list">
-            <a href="tel:+48515123789"><strong>Telefon</strong><span>515 123 789</span></a>
-            <a href="mailto:archisstudio@gmail.com"><strong>E-mail</strong><span>archisstudio@gmail.com</span></a>
-            <a href="https://www.facebook.com/archisstudioprojekt/" target="_blank" rel="noopener"><strong>Facebook</strong><span>archisstudioprojekt</span></a>
-          </div>
+      <div class="contact-panel reveal">
+        <p class="eyebrow">Kontakt</p>
+        <h2>Porozmawiajmy o projekcie.</h2>
+        <p>
+          Napisz, czego dotyczy inwestycja: dom, budynek mieszkalny,
+          obiekt usługowy albo koncepcja architektoniczna.
+        </p>
 
-          <div class="contact-actions">
-            <a href="mailto:archisstudio@gmail.com" class="btn btn-primary">Napisz e-mail</a>
-            <a href="https://www.facebook.com/archisstudioprojekt/" target="_blank" rel="noopener" class="btn btn-secondary">Otwórz Facebook</a>
-          </div>
+        <div class="contact-grid">
+          <a href="tel:515123789">
+            <span>Telefon</span>
+            <strong>515 123 789</strong>
+          </a>
+
+          <a href="mailto:archisstudio@gmail.com">
+            <span>E-mail</span>
+            <strong>archisstudio@gmail.com</strong>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-wrap">
-      <div class="footer-brand">
-        <img src="logomale.png" alt="ARCHIS Studio Projekt" />
-        <p>ARCHIS Studio Projekt — nowoczesne projekty budynków mieszkalnych, usługowych i koncepcji architektonicznych.</p>
-      </div>
-      <div class="footer-copy">
-        <span>Projektowanie budynków • koncepcje • konsultacje</span>
-      </div>
+  <footer class="footer">
+    <div class="footer-brand">
+      <img src="logoduze.png" alt="ARCHISS Studio Projekt">
+      <p>
+        ARCHISS Studio Projekt — pracownia architektoniczna tworząca projekty domów,
+        budynków mieszkalnych, usługowych i koncepcji inwestycyjnych.
+      </p>
+      <p class="footer-small">Architektura budynków, koncepcje, projekty i konsultacje.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Oferta</h4>
+      <a href="#oferta">Projekty domów</a>
+      <a href="#oferta">Budynki mieszkalne</a>
+      <a href="#oferta">Obiekty usługowe</a>
+      <a href="#oferta">Koncepcje</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Kontakt</h4>
+      <a href="tel:515123789">515 123 789</a>
+      <a href="mailto:archisstudio@gmail.com">archisstudio@gmail.com</a>
+      <a href="https://www.facebook.com/archisstudioprojekt/" target="_blank" rel="noopener">Facebook ARCHISS Studio Projekt</a>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© ARCHISS Studio Projekt. Projektowanie budynków.</p>
     </div>
   </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button id="lightboxClose" aria-label="Zamknij">×</button>
+    <img src="" alt="" id="lightboxImage">
+  </div>
 
   <script src="script.js"></script>
 </body>
